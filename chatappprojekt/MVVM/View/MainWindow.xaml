@@ -1,0 +1,22 @@
+﻿<Window
+    x:Class="chatappprojekt.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:ChatClient.MVVM.View.Net"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewmodel="clr-namespace:ChatClient.MVVM.ViewModel"
+    Title="BWUP"
+    Width="1016"
+    Height="488"
+    Background="#6b6f7b"
+    mc:Ignorable="d">
+
+    <Window.DataContext>
+        <viewmodel:MainViewModel />
+    </Window.DataContext>
+
+    <Grid x:Name="MainGrid" x:FieldModifier="public">
+        <local:LoginUserControl />
+    </Grid>
+</Window>
